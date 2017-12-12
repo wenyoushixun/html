@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>诗词门户网站</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="实训,教育,IT">
+    <meta name="description" content="轻实训案例">
+    <meta name="author" content="轻实训">
+    <!-- 引入 jQuery 库 -->
+    <script src="plugins/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <!-- 引入轮播幻灯片插件 -->
+    <script src="plugins/slider/jquery.nivo.slider.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="plugins/slider/themes/default/default.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="plugins/slider/nivo-slider.css" type="text/css" media="screen">
+
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <script>
+        $(window).load(function() {
+            //初始化轮播幻灯片插件
+            $('#slider').nivoSlider();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="javascript:void(0);">
+                    <img src="images/logo.png" title="logo" alt="logo" />
+                </a>
+            </div>
+            <section id="search">
+                <form action="#" onsubmit="return false;" method="get">
+                    <input type="text" onfocus="if (this.value =='搜索..' ) this.value=''" onblur="if (this.value=='') this.value='搜索..'" value="搜索.." name="q">
+                    <input type="submit" value="">
+                </form>
+            </section>
+        </header>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="index.html">诗词大全</a></li>
+                <li><a href="index.html">典故词汇</a></li>
+                <li><a href="index.html">影印古籍</a></li>
+                <li><a href="index.html">诗话</a></li>
+                <li><a href="index.html">词话</a></li>
+                <li><a href="admin/pages/slider/list.html">【管理端】</a></li>
+            </ul>
+        </nav>
+
+        <div id="submain">
+            <section id="subcontent">
+                <div id="left">
+                    <article class="article">
+                        <h3>李白</h3>
+                        <div class="article-content">
+                            长安元年（701年），李白，字太白。其生地今一般认为是唐剑南道绵州（巴西郡）昌隆（后避玄宗讳改为昌明）青莲乡。祖籍为甘肃天水。其家世、家族皆不详。据《新唐书》记载，李白为兴圣皇帝（凉武昭王李暠）九世孙，按照这个说法李白与李唐诸王同宗，是唐太宗李世民的同辈族弟。亦有说其祖是李建成或李元吉。
+                            <br><br>神龙元年（705年）， 十一月，武则天去世。李白五岁。发蒙读书始于是年。《上安州裴长史书》云:“五岁诵六甲。”六甲，唐代的小学识字课本，长史，州之次官。 开元三年（715年），李白十五岁。已有诗赋多首，并得到一些社会名流的推崇与奖掖，开始从事社会干谒活动。亦开始接受道家思想的影响，好剑术，喜任侠。是年岑参生。
+                            <br><br>开元六年（718年），李白十八岁。隐居戴天大匡山（在今四川省江油县内）读书。往来于旁郡，先后出游江油、剑阁、梓州（州治在今四川省境内）等地，增长了不少阅历与见识。
+                        </div>
+                    </article>
+                </div>
+                <div id="right">
+                    <div class="block">
+                        <h3>诗词大全</h3>
+                        <ul class="archives">
+                            <li><a href="#">诗经名物图解</a></li>
+                            <li><a href="#">诗经集注</a></li>
+                            <li><a href="#">楚辞集注</a></li>
+                            <li><a href="#">李白全集</a></li>
+                            <li><a href="#">杜甫全集</a></li>
+                            <li><a href="#">杜牧诗选评</a></li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <h3>最近发表</h3>
+                        <ul class="recent">
+                            <li>
+                                <time datetime="2017-3-23">2017-3-23</time>
+                                <p>唐诗中常引用的五十个典故</p>
+                            </li>
+                            <li>
+                                <time datetime="2017-3-23">2017-3-23</time>
+                                <p>十五个出自论语的常用典故</p>
+                            </li>
+                            <li>
+                                <time datetime="2017-3-23">2017-3-23</time>
+                                <p>二十个出自诗经的常用典故</p>
+                            </li>
+                            <li>
+                                <time datetime="2017-3-23">2017-3-23</time>
+                                <p>那些发生在雪天的典故</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <ul id="social">
+                <li>
+                    <a href="#" title="qq"><img alt="" src="images/icon_qq.png" /></a>
+                </li>
+                <li>
+                    <a href="#" title="wx"><img alt="" src="images/icon_wx.png" /></a>
+                </li>
+                <li>
+                    <a href="#" title="wb"><img alt="" src="images/icon_wb.png" /></a>
+                </li>
+                <li>
+                    <a href="#" title="zero"><img alt="" src="images/icon_zero.png" /></a>
+                </li>
+            </ul>
+            <div id="privacy">
+                Copyright &copy; 2017.轻实训版权所有
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

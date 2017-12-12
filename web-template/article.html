@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>诗词门户网站</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="实训,教育,IT">
+    <meta name="description" content="轻实训案例">
+    <meta name="author" content="轻实训">
+    <!-- 引入 jQuery 库 -->
+    <script src="plugins/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <!-- 引入轮播幻灯片插件 -->
+    <script src="plugins/slider/jquery.nivo.slider.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="plugins/slider/themes/default/default.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="plugins/slider/nivo-slider.css" type="text/css" media="screen">
+
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <script>
+        $(window).load(function() {
+            //初始化轮播幻灯片插件
+            $('#slider').nivoSlider();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="javascript:void(0);">
+                    <img src="images/logo.png" title="logo" alt="logo" />
+                </a>
+            </div>
+            <section id="search">
+                <form action="#" onsubmit="return false;" method="get">
+                    <input type="text" onfocus="if (this.value =='搜索..' ) this.value=''" onblur="if (this.value=='') this.value='搜索..'" value="搜索.." name="q">
+                    <input type="submit" value="">
+                </form>
+            </section>
+        </header>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="index.html">诗词大全</a></li>
+                <li><a href="index.html">典故词汇</a></li>
+                <li><a href="index.html">影印古籍</a></li>
+                <li><a href="index.html">诗话</a></li>
+                <li><a href="index.html">词话</a></li>
+                <li><a href="admin/pages/slider/list.html">【管理端】</a></li>
+            </ul>
+        </nav>
+
+        <div id="submain">
+            <section id="subcontent">
+                <div id="left">
+                    <article class="article">
+                        <h3>早发白帝城</h3>
+                        <div class="article-content">
+朝辞白帝彩云间，千里江陵一日还。<br><br>两岸猿声啼不住，轻舟已过万重山。<br><br>注释：1、白帝：今四川省奉节。2、江陵：今湖北省江宁县。县。3、一日还：一天就可以到达。 <br><br>译文：清晨，我告别高入云霄的白帝城；江陵远在千里，船行只一日时间。 两岸猿声，还在耳边不停地啼叫； 不知不觉，轻舟已穿过万重青山。<br><br>赏析：唐肃宗乾元二年（759），诗人流放夜郎，行至白帝遇赦，乘舟东还江陵时而作此诗。诗意在描摹自白帝至江陵一段长江，水急流速，舟行若飞的情况。首句写白帝城之高；二句写江陵路遥，舟行迅速；三句以山影猿声烘托行舟飞进；四句写行舟轻如无物，点明水势如泻。
+                        </div>
+                    </article>
+                </div>
+                <div id="right">
+                    <div class="block">
+                        <h3>诗词大全</h3>
+                        <ul class="archives">
+                            <li><a href="#">诗经名物图解</a></li>
+                            <li><a href="#">诗经集注</a></li>
+                            <li><a href="#">楚辞集注</a></li>
+                            <li><a href="#">李白全集</a></li>
+                            <li><a href="#">杜甫全集</a></li>
+                            <li><a href="#">杜牧诗选评</a></li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <h3>最近发表</h3>
+                        <ul class="recent">
+                            <li>
+                                <time datetime="2017-3-23">2017-3-23</time>
+                                <p>唐诗中常引用的五十个典故</p>
+                            </li>
+                            <li>
+                                <time datetime="2017-3-23">2017-3-23</time>
+                                <p>十五个出自论语的常用典故</p>
+                            </li>
+                            <li>
+                                <time datetime="2017-3-23">2017-3-23</time>
+                                <p>二十个出自诗经的常用典故</p>
+                            </li>
+                            <li>
+                                <time datetime="2017-3-23">2017-3-23</time>
+                                <p>那些发生在雪天的典故</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <ul id="social">
+                <li>
+                    <a href="#" title="qq"><img alt="" src="images/icon_qq.png" /></a>
+                </li>
+                <li>
+                    <a href="#" title="wx"><img alt="" src="images/icon_wx.png" /></a>
+                </li>
+                <li>
+                    <a href="#" title="wb"><img alt="" src="images/icon_wb.png" /></a>
+                </li>
+                <li>
+                    <a href="#" title="zero"><img alt="" src="images/icon_zero.png" /></a>
+                </li>
+            </ul>
+            <div id="privacy">
+                Copyright &copy; 2017.轻实训版权所有
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
